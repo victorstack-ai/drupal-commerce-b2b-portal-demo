@@ -1,0 +1,3 @@
+services:
+  commerce_b2b_portal_demo.summary_builder:
+    class: Drupal\commerce_b2b_portal_demo\PortalSummaryBuilder

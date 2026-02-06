@@ -1,0 +1,6 @@
+access b2b portal:
+  title: 'Access B2B portal'
+  description: 'View the B2B portal landing page.'
+administer b2b portal settings:
+  title: 'Administer B2B portal settings'
+  description: 'Configure B2B portal labels and support info.'

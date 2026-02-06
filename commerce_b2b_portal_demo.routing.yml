@@ -1,0 +1,15 @@
+commerce_b2b_portal_demo.portal:
+  path: '/b2b/portal'
+  defaults:
+    _controller: '\\Drupal\\commerce_b2b_portal_demo\\Controller\\B2bPortalController::view'
+    _title: 'B2B Portal'
+  requirements:
+    _permission: 'access b2b portal'
+
+commerce_b2b_portal_demo.settings:
+  path: '/admin/config/commerce/b2b-portal-demo'
+  defaults:
+    _form: '\\Drupal\\commerce_b2b_portal_demo\\Form\\B2bPortalSettingsForm'
+    _title: 'B2B portal settings'
+  requirements:
+    _permission: 'administer b2b portal settings'

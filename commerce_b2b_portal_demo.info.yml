@@ -1,0 +1,5 @@
+name: Commerce B2B Portal Demo
+type: module
+description: Demo B2B portal patterns for Drupal Commerce sites.
+core_version_requirement: ^10 || ^11
+package: Commerce
