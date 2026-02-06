@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Install hooks for Commerce B2B Portal Demo.
+ */
+
+use Drupal\user\Entity\Role;
+
+/**
+ * Implements hook_install().
+ */
+function commerce_b2b_portal_demo_install(): void {
+    if (Role::load('b2b_portal_user')) {
+        return;
+    }
+
+    $role = Role::create([
+        'id' => 'b2b_portal_user',
+        'label' => 'B2B Portal User',
+    ]);
+    $role->grantPermission('access b2b portal');
+    $role->save();
+}
