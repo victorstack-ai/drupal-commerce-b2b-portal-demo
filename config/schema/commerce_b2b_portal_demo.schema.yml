@@ -1,0 +1,13 @@
+commerce_b2b_portal_demo.settings:
+  type: config_object
+  label: 'B2B portal settings'
+  mapping:
+    company_label:
+      type: label
+      label: 'Company label'
+    account_manager_label:
+      type: label
+      label: 'Account manager label'
+    support_email:
+      type: email
+      label: 'Support email'
